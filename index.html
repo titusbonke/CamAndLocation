@@ -9,13 +9,17 @@
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <!-- <script>alert("working");</script> -->
     <input type="file" accept="image/*" capture="camera" onchange="loadFile(event)">
     <br />
-    <img id="output"  style="width: 100%;height:100%;"/>
-    <div >
-<h1 id="msg"></h1>
+    <a href="https://mobile.circle7.robeeta.com/Transaction/DownloadFile?transid=@FYytyLLvXmnflHa9D4ArUA==@" download="custom_filename.pdf">Click here to download the file</a>
+    <br />
+
+    <img id="output" style="width: 100%;height:100%;" />
+    <div>
+        <h1 id="msg"></h1>
     </div>
     <script>
         var loadFile = function (event) {
@@ -41,12 +45,12 @@
       Longitude: ${crd.longitude}
       More or less ${crd.accuracy} meters.
       `);
-      console.log(`Your current position is:
+            console.log(`Your current position is:
       Latitude : ${crd.latitude}
       Longitude: ${crd.longitude}
       More or less ${crd.accuracy} meters.
       `);
-      $("#msg").html(`Your current position is:
+            $("#msg").html(`Your current position is:
       Latitude : ${crd.latitude}
       Longitude: ${crd.longitude}
       More or less ${crd.accuracy} meters.
