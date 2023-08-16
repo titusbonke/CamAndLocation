@@ -22,7 +22,6 @@
         <h1 id="msg"></h1>
     </div>
     <script>
-        alert("testing1");
         var loadFile = function (event) {
             var output = document.getElementById('output');
             output.src = URL.createObjectURL(event.target.files[0]);
@@ -39,6 +38,7 @@
         };
 
         function success(pos) {
+            alert("b");
             var crd = pos.coords;
 
             alert(`Your current position is:
@@ -60,6 +60,7 @@
         };
 
         function error(err) {
+            alert("a");
             alert(`ERROR(${err.code}): ${err.message}`);
             $("#msg").html(`ERROR(${err.code}): ${err.message}`);
         };
